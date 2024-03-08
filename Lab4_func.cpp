@@ -1,6 +1,30 @@
 #include <iostream>
 using namespace std;
 
+/** select
+* @brief output the statements based on func_type
+* func_type : output
+* "sum" : "The sum is "
+* "division" : "The quotient is "
+* "comparison" : "The first value being greater than the second value is "
+* All other phrases: "Invalid function type\n"
+* @param func_type : (string)
+* @return string
+*/
+string select(string func_type) {
+    string out;
+    if (func_type == "sum") {
+        out = "The sum is ";
+    } else if (func_type == "division") {
+        out = "The quotient is ";
+    } else if (func_type == "comparison") {
+        out = "The first value being greater than the second value is ";
+    } else {
+        out = "Invalid function type\n";
+    }
+    return out;
+}
+
 /** isGreaterThan
 * @brief returns whether x is greater than y
 *
