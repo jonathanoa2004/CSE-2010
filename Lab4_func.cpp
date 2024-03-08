@@ -1,6 +1,31 @@
 #include <iostream>
 using namespace std;
 
+/** isGreaterThan
+* @brief returns whether x is greater than y
+*
+* @param x : (double)
+* @param y : (int)
+* @return true : x is greater than y
+* @return false : x is less than or equal to y
+*/
+bool isGreaterThan(double x, int y) {
+    return x > y;
+}
+
+
+/** sumOfThree
+* @brief returns the sum of x, y, and z
+*
+* @param x : (int)
+* @param y : (int)
+* @param z : (int)
+* @return int
+*/
+int sumOfThree(int x, int y, int z) {
+    return x + y + z;
+}
+
 /** sumOfThree
  * @brief returns the sum of x, y, and z
  * 
